@@ -1,0 +1,1 @@
+import fs from 'node:fs';fs.mkdirSync('dist/server',{recursive:true});const text='const UI='+JSON.stringify(fs.readFileSync('ui.html','utf8'))+';\nconst ASSETS='+fs.readFileSync('assets.json','utf8')+';\nconst DEFAULTS='+fs.readFileSync('sources.json','utf8')+';\n'+fs.readFileSync('worker/logic.js','utf8');fs.writeFileSync('dist/server/index.js',text);

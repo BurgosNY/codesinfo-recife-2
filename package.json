@@ -1,0 +1,13 @@
+{
+  "name": "codesinfo-recife-2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node --env-file-if-exists=.env scripts/local-server.mjs"
+  }
+}
